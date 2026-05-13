@@ -1,17 +1,18 @@
 {
-    "name": "ksfraser/ksf_jobdescriptions",
-    "description": "KSF Job Descriptions Library",
-    "type": "library",
+    "name": "ksfraser/ksf-job-descriptions",
+    "description": "Job Descriptions Management for HRM",
+    "type": "php-package",
     "license": "GPL-3.0",
     "require": {
-        "php": "^8.1"
+        "php": ">=8.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^10.5"
+        "phpunit/phpunit": "^10.0"
     },
     "autoload": {
         "psr-4": {
-            "Ksfraser\\JobDescriptions\\": "src/"
+            "Ksfraser\\JobDescriptions\\": "src/Ksfraser/JobDescriptions/",
+            "Ksfraser\\": "src/Ksfraser/"
         }
     },
     "autoload-dev": {
@@ -19,5 +20,5 @@
             "Ksfraser\\JobDescriptions\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
